@@ -5,14 +5,12 @@ from Punto import Punto
 #Clase Padre
 from Punto import Punto
 
-class Figura(object):
-  #  def __init__(self,punto1=[]):
-   #     punto = punto1
-    #    print(punto1[1])
+class Figura():
+    def __init__(self, punto1):
+        self.punto = punto1
 
     def hallarPerimetro(self):
         n=len(self.punto)
-        print(n)
         p=0
         if(n>2):
             for i in self.punto:
@@ -41,14 +39,16 @@ class Figura(object):
 
     def hallarArea(self):
         n = len(self.punto)
+        print(n)
         a = 0
 
-        switcher = {
-            2: self.areaCirculo,
-            3: self.areaTriangulo,
-            4: self.areaRectangulo
-        }
-        a= switcher.get(self,lambda :"Figura invalida")
+        if(n==2):
+            a= self.areaCirculo()
+        elif(n==3):
+            a= self.areaTriangulo()
+        elif(n==4):
+            a=self.areaRectangulo()
+
         return a
 
 
