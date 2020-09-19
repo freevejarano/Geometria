@@ -12,8 +12,8 @@ class Test(TestCase):
 
     def test_EnElcirculoTrue(self):
         z = Punto(2,2)
-        self.assertTrue(circulo.determinarEnElCirculo(z),"Si")
+        self.assertTrue(circulo.determinarEnElCirculo(z))
 
     def test_EnElCirculoFalse(self):
         w = Punto(5, 5)
-        self.assertFalse(circulo.determinarEnElCirculo(w),"Si")
+        self.assertFalse(circulo.determinarEnElCirculo(w))

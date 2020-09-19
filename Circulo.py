@@ -1,5 +1,3 @@
-import math
-
 from Figura import Figura
 class Circulo(Figura):
         pass
