@@ -37,7 +37,7 @@ class Figura():
 
     def areaRectangulo(self):
         a= self.punto[0].hallarDistancia(self.punto[1]) * self.punto[1].hallarDistancia(self.punto[2])
-        print("El area del rectangulo es: ",a)
+        print("El area del rectángulo es: ",a)
         return a
 
     def hallarArea(self):
